@@ -5,7 +5,7 @@ module.exports = {
         req.assert('_name','O nome é obrigatório').notEmpty();
         req.assert('_email','O email é obrigatório').notEmpty().isEmail();
 
-        let errors = req.validationsErrors();
+        let errors = req.validationErrors();
 
         if (errors) {
 
